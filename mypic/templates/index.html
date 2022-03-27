@@ -27,7 +27,7 @@
 
   <div class="pic">
     {% for picture in picture %}
-  <div class="card mb-3" style="max-width: 540px;margin:1rem;margin-left:2rem;">
+  <div class="card mb-3" style="max-width: 540px;margin:1rem;margin-left:5rem;">
     <div class="row g-0">
       <div class="col-md-4">
         <img style="height: 20rem;width: 35rem;" src="{{picture.image.url}}" class="img-fluid rounded-start" alt="...">
@@ -36,7 +36,8 @@
         <div class="card-body">
           <h3 style="color: black;margin-left:20rem" class="card-title"><strong>Sharp Jr.Gallery</strong></h3>
           <p  style="color: black;margin-left:20rem;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">{{picture.description }}</p>
-          <p style="margin-left:20rem" style="font-size: small;color:black">{{ picture.date }}</p>
+          <p style="margin-left:20rem" style="font-size: 2px;color:black">{{ picture.date }}</p>
+          
         </div>
       </div>
     </div>
