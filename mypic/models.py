@@ -31,10 +31,12 @@ class Picture(models.Model):
     def delete_image(self):
         self.delete()
 
+
     @classmethod
     def search_by_category(cls, category):
         images = cls.objects.filter(category__name__icontains=category)
         return images
         
     def __str__(self):
-        return self.description
+        return self.name
+ 
