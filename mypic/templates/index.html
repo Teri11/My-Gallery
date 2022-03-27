@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% load bootstrap3 %}
+
 {% block content %}
 <div class="row">
   <div class="col-md-2"></div>
@@ -11,6 +11,16 @@
     </div>
   </div>
   </div>
+<div class="container-fluid">
+{% for picture in picture %}
+  <img src="{{picture.image.url}}" alt="">
+  <p>{{picture.description }}</p>
+  <p>{{ picture.date }}</p>
+
+
+{% empty %}
+{% endfor %}
+</div>
 
 <div class="row" id="email">
   <div class="col-md-3"></div>
