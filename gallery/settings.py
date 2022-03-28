@@ -67,7 +67,7 @@ INSTALLED_APPS = [
     'mypic.apps.MypicConfig',
     'mypic',
     'bootstrap3',
-    'cloudinary'    
+       
 ]
 
 MIDDLEWARE = [
