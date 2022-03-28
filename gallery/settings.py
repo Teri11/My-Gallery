@@ -66,7 +66,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'mypic.apps.MypicConfig',
     'mypic',
-    'bootstrap3',
+    'bootstrap3'
        
 ]
 
