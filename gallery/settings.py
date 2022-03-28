@@ -10,7 +10,7 @@ import os
 from pathlib import Path
 import django_heroku
 import dj_database_url
-from decouple import config
+from decouple import config,Csv
 
 MODE=config("MODE", default="dev")
 SECRET_KEY = config('SECRET_KEY')
@@ -64,7 +64,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'gallery.apps.GalleryConfig',
+    'mypic.apps.MypicConfig',
     'mypic',
     'bootstrap3',
     'cloudinary'
