@@ -1,4 +1,5 @@
-from django.http  import HttpResponse,Http404
+
+from email.mime import image
 from django.shortcuts import render
 from .models import Category,Picture
 

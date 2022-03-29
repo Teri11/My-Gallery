@@ -71,7 +71,7 @@ body {
   }
   .slide {
     width: auto;
-  }
+  } 
   /* #launcher {
     padding-top: 5%;
     text-align: center;
@@ -89,13 +89,13 @@ body {
     margin: 4px 4px;
     cursor: pointer;
     border-radius: 8px;
-  } */
-  /* #launcher a:hover {
+  }  */
+   /* #launcher a:hover {
     background-color: #058F03;
     border:solid 8px #295168;
     color: white;
-  } */
-  @media (max-width: 1000px) {
+  }  */
+   @media (max-width: 1000px) {
     nav {
       height: auto !important;
       padding-top: 1vh;
@@ -107,5 +107,4 @@ body {
       height: auto;
     }
     
-  }
- 
+  }  

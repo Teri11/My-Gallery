@@ -8,6 +8,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 import os
 from pathlib import Path
+from pickle import TRUE
 import django_heroku
 import dj_database_url
 from decouple import config,Csv
@@ -15,9 +16,10 @@ from decouple import config,Csv
 MODE=config("MODE", default="dev")
 SECRET_KEY = config('SECRET_KEY')
 DEBUG = os.environ.get('DEBUG', True)
+# DEBUG=True 
 # development
 if config('MODE')=="dev":
-   DATABASES = {
+    DATABASES = {
        'default': {
            'ENGINE': 'django.db.backends.postgresql_psycopg2',
            'NAME': config('DB_NAME'),
@@ -65,6 +67,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'mypic.apps.MypicConfig',
+    'bootstrap3'
     
        
 ]

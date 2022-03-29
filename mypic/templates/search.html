@@ -4,7 +4,7 @@
 
   <div class="row">
     {% if picture%}
-      <h4>Found {{ picture|length }} of searched term {{message}}</h4>
+      <h4>Found {{ articles|length }} of searched term {{message}}</h4>
     {% else %}
       <h4> Found 0 picture for the search term {{message}}</h4>
     {% endif %}
@@ -17,20 +17,16 @@
     {% for article in articles %}
     <div class="card  " style="width: 18rem;">
            
-        <h4 class="list-group-item"  > <span style="color: #874356;">Category~</span>{{article.category }}</h4>
+        <h4 class="list-group-item"  > <span style="color: #874356;">Category~</span>{{articles.category }}</h4>
         <img src="{{article.image.url}}" class="card-img-top" alt="Image">
        
-        <h5 class="card-title" style="color: aliceblue;"> <span style="color: #874356;">Name:</span>{{ article.name }}</h5>
+        <h5 class="card-title" style="color: aliceblue;"> <span style="color: #874356;">Name:</span>{{ articles.name }}</h5>
         <p class="card-text" style="color: aliceblue; "> <span style="color: #874356;">Description:</span>{{article.description }}</p>
        
        
-        <li class="list-group-item" > <span style="color: #874356;">Posted on~</span> {{ article.date }}</li>
-        <li class="list-group-item"> <span style="color: #874356;">Author~</span>{{ article.author }} </li>
-        
+        <li class="list-group-item" > <span style="color: #874356;">Posted on~</span> {{ articles.date }}</li>
   
-   
-   
-</div>
+    </div>
     
     {% endfor %}
   {% endif %}
